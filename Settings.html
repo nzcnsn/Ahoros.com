@@ -13,7 +13,7 @@ body,h1,h2,h3,h4,h5 {
 }
 body {
     font-size:16px;
-    background-image: #e8e0d5;
+    background-image: #EEEAE0;
 }
 .w3-half img{
     margin-bottom:-6px;
@@ -28,26 +28,30 @@ body {
   border-radius: 15px;
   padding: 5px;
 }
-
-
-
+.w3-sidebar{
+  box-shadow: 5px 5px 30px rgb(39, 39, 39);
+  background-image: linear-gradient(#bc6c3d, #693f27);
+}
+type{
+  border-color: #EEEAE0;
+  border-radius: 10px;
+}
 </style>
 </head>
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" 
-     style="z-index:3;width:300px;font-weight:bold;background-image:linear-gradient(#BC6C3D,#693F27);box-shadow: 5px 5px 30px rgb(39, 39, 39);" id="mySidebar"><br>
+<nav class="w3-center w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color: #EEEAE0;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Ahorros<br></h3>
+    <img class="w3-center w3-padding-64" src="https://raw.githubusercontent.com/nzcnsn/Ahorros.github.io/Asuncion/Ahorros/Photos/Ahorros_logo.png" alt="Logo" width="100">
   </div>
   <div class="w3-bar-block">
     <a href="file:///C:/Users/dustin/Documents/GitHub/Ahorros.github.io/Ahorros.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-house" style="padding-right: 7px;"></i>My Profile</a> 
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-chart-line" style="padding-right: 7px;"></i>Transactions</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-peso-sign" style="padding-right: 7px;"></i>Expenses</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-wallet" style="padding-right: 7px;"></i>My wallets</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-wrench" style="padding-right: 7px;"></i>Settings</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-peso-sign" style="padding-right: 7px;"></i>Expenses</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-wallet" style="padding-right: 7px;"></i>My wallets</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-lime" style="border-radius:8px 8px 8px 8px;"><i class="fa-solid fa-wrench" style="padding-right: 7px;"></i>Settings</a> 
   </div>
 </nav>
 
@@ -72,35 +76,50 @@ body {
       <p>Update your account infromation.</p>
       <button type="button" class="w3-button w3-padding-large w3-lime w3-margin-bottom" style="border-radius: 5px; position: absolute; right:100px;">Edit</button>
       <h3 style="padding-top: 10px;">Personal Information</h3> 
+
       <form class="form-inline" action="/action_page.php" target="_blank">
-      <div class="w3-section">
+
+      <div class="w3-section" style="float: left; padding-right: 50px;">
         <label>First Name</label>
-        <input class= "w3-input w3-border" type="text" value= "Winston" name="Fname" style="border-radius: 8px;" required >
+        <input class= "w3-input w3-border" type="text" value= "Winston" name="Fname" size="35" style="border-radius: 8px;" required >
+      </div>
+
+      <div class="w3-section" style="float: left;">
         <label>Last Name</label>
-        <input class="w3-input w3-border" type="text" value="Racelis" name="Lname" style="border-radius: 8px;" required>
+        <input class="w3-input w3-border" type="text" value="Racelis" name="Lname" size="35"style="border-radius: 8px;" required>
       </div>
 
-      <div class="w3-section">
+      <div class="w3-section" style="clear: both; float: left; padding-right: 50px;">
         <label>Date of birth</label>
-        <input class= "w3-input w3-border" type="text" value="27/09/1998" name="birth" style="border-radius: 8px;" required>
+        <input class= "w3-input w3-border" type="text" value="27/09/1998" name="birth" size="35" style="border-radius: 8px;" required>
+      </div>
+
+      <div class="w3-section" style="float: left;">
         <label>Mobile Number</label>
-        <input class="w3-input w3-border" type="text" value="091112223344" name="contact" style="border-radius: 8px;" >
+        <input class="w3-input w3-border" type="text" value="091112223344" name="contact" size="35" style="border-radius: 8px;" >
       </div>
 
-      <div class="w3-section">
+      <div class="w3-section" style="clear: both; float: left;  padding-right: 5px;">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" value="HectorRacelis29@gmail.com" name="email" style="border-radius: 8px;" required>
+        <input class="w3-input w3-border" type="text" value="HectorRacelis29@gmail.com" name="email" size="84" style="border-radius: 8px;" required>
       </div>
 
-      <div class="w3-section">
+      <div class="w3-section" style="clear: both; float: left; padding-right: 50px;">
         <label>New Password</label>
-        <input class="w3-input w3-border" type="text" value="********" name="oldpwd" style="border-radius: 8px;" required>
-        <label>Confirm Password</label>
-        <input class="w3-input w3-border" type="text" value="********" name="newpwd" style="border-radius: 8px;" required>
+        <input class="w3-input w3-border" type="text" value="********" name="oldpwd" size="35" style="border-radius: 8px;" required>
       </div>
+
+      <div class="w3-section" style="float: left;">
+        <label>Confirm Password</label>
+        <input class="w3-input w3-border" type="text" value="********" name="newpwd" size="35" style="border-radius: 8px;" required>
+      </div>
+
     </form>
-    <button type="button" class="w3-button w3-padding-large w3-lime w3-margin-bottom" style="border-radius: 5px;">Update</button>
+    <div style="clear: both; padding-top: 20px; padding-bottom: 20px;">
+      <button type="button" class="w3-button w3-padding-large w3-lime w3-margin-bottom" style="border-radius: 5px;">Update</button>
     </div>
+
+  </div>
         
   </div>
   
